@@ -1,0 +1,140 @@
+@import url("styles/level.css");
+@import url("styles/hiking.css");
+@import url("styles/map.css");
+@import url("styles/header.css");
+@import url("styles/hero.css");
+@import url("styles/media.css");
+@import url("styles/footer.css");
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1519414442781-fbd745c5b497?q=80&w=1482&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #201421;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Gilroy", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .level,
+  .hiking,
+  .map {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .level__container,
+  .hiking__container,
+  .map__container,
+  .hiking__container {
+    padding: 0;
+    text-align: center;
+  }
+
+  .level__img,
+  .hiking__img,
+  .map__img,
+  .hiking__img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .level,
+  .map,
+  .hiking {
+    margin: 50px 35px;
+    padding: 30px;
+  }
+  body {
+    background-size: cover;
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .level__container h1,
+  .map__container h1,
+  . .hiking__container h1 {
+    font-size: 28px;
+  }
+
+  .level__container p,
+  .map__container p,
+  .hiking__container p {
+    font-size: 16px;
+  }
+  .hiking__img img {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 627px) {
+  .s-media .s-item {
+    width: 30px;
+    height: 45px;
+  }
+  .s-media {
+    margin-top: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .level,
+  .map,
+  .hiking {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .level__container h1,
+  .hiking__container h1,
+  .map__container h1,
+  .hiking__container h1 {
+    font-size: 32px;
+  }
+
+  .level__container p,
+  .hiking__container p,
+  .map__container p,
+  .hiking__container p {
+    font-size: 14px;
+  }
+  .first,
+  .second,
+  .tree {
+    margin-left: 0px;
+  }
+}
+
+body h6 {
+  text-transform: uppercase;
+  color: rgb(251, 215, 132);
+  font-family: "Gilroy", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 22.05px;
+  letter-spacing: 6px;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("fonts/Gilroy-Regular.woff") format("woff"),
+    url("fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("fonts/Gilroy-Bold.woff") format("woff"),
+    url("fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.stock {
+  margin-left: 20px;
+}

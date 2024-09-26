@@ -1,0 +1,167 @@
+.s-media {
+  position: fixed;
+  top: 130px;
+  left: 0;
+  z-index: 1000;
+  transition: all linear 0.2s;
+}
+
+.s-item {
+  display: block;
+  width: 70px;
+  height: 60px;
+  color: white;
+  font-size: 25px;
+  line-height: 60px;
+  text-align: center;
+  transition: all linear 0.2s;
+}
+
+.s-item:hover {
+  width: 120px;
+}
+
+.facebook {
+  background-color: #201421;
+  opacity: 0.9;
+  border-top: 1px solid #b6b5b5;
+  border-bottom: 1px solid #b6b5b5;
+  border-top-right-radius: 10px;
+}
+
+.facebook:hover {
+  background-color: #305891;
+  border-bottom-right-radius: 10px;
+}
+
+.twitter {
+  background-color: #201421;
+  opacity: 0.9;
+  border-bottom: 1px solid #b6b5b5;
+}
+
+.twitter:hover {
+  background-color: #3aafd6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.instagram {
+  background-color: #201421;
+  opacity: 0.9;
+  border-bottom: 1px solid #b6b5b5;
+}
+
+.instagram:hover {
+  background-color: #305891;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(
+    165deg,
+    #515bd4 20%,
+    #8134af 40%,
+    #dd2a7b 60%,
+    #feda77 90%
+  );
+}
+
+.youtube {
+  background-color: #201421;
+  opacity: 0.9;
+  border-bottom: 1px solid #b6b5b5;
+  border-bottom-right-radius: 10px;
+}
+
+.youtube:hover {
+  background-color: #af0606;
+  border-top-right-radius: 10px;
+}
+
+/* Адаптивные стили */
+
+@media (max-width: 1400px) {
+  .s-media {
+    top: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .s-media {
+    top: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .s-media {
+    top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-media {
+    top: 0px;
+  }
+
+  .s-item {
+    width: 60px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .s-item:hover {
+    width: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .s-media {
+    top: 150px;
+  }
+  .s-item {
+    width: 50px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .s-item:hover {
+    width: 70px;
+  }
+}
+
+@media (max-width: 360px) {
+  .s-item {
+    width: 40px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .s-item:hover {
+    width: 70px;
+  }
+}
+
+/* Горизонтальная ориентация */
+@media (orientation: landscape) and (max-height: 768px) {
+  .s-media {
+    top: 0px;
+  }
+
+  .s-item {
+    width: 50px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .s-item:hover {
+    width: 70px;
+  }
+}
+@media (orientation: landscape) and (max-height: 1600px) {
+  .s-media {
+    top: 70px;
+  }
+}
